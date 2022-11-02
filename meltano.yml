@@ -125,6 +125,9 @@ schedules:
   loader: target-duckdb
   transform: skip
   start_date: 2022-10-01 18:08:45.303947
+- name: daily-run-all
+  interval: '@daily'
+  job: run-all
 project_id: 0f7b47e6-7268-4193-9522-1773c1ee9fee
 # Invoke jobs with `meltano run JOB_NAME`
 jobs:
